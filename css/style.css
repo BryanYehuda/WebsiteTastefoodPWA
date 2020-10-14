@@ -1,0 +1,201 @@
+nav ul a,
+nav .brand-logo 
+{
+  color: #444;
+}
+
+p 
+{
+  line-height: 2rem;
+}
+
+.sidenav-trigger 
+{
+  color: #26a69a;
+}
+
+
+@media only screen and (max-width : 1184px) 
+{
+  .home .card-content .card-title
+  {
+    font-size: 20px;
+  }
+  
+  .home .card-content .material-icons
+  {
+    font-size: 18px;
+  }
+  
+  .home .icon-block h4
+  {
+    font-size: 28px;
+  }
+  
+  .home .icon-block h5
+  {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width : 1071px) 
+{
+  .home .how-to h2
+  {
+    font-size: 45px;
+  }
+  
+  .home .how-to h4
+  {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width : 992px) 
+{
+  .home .card-content .card-title
+  {
+    font-size: 25px;
+  }
+  
+  .home .card-content .material-icons
+  {
+    font-size: 25px;
+  }
+  
+  #index-banner .section 
+  {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 740px) 
+{
+  .contact .icon-block h2
+  {
+    font-size: 40px;
+  }
+  
+  .contact .icon-block h5
+  {
+    font-size: 18px;
+  }
+  
+  .contact .icon-block h6
+  {
+    font-size: 16x;
+  }
+}
+
+@media only screen and (max-width : 710px) 
+{
+  .location .card-content .card-title
+  {
+    font-size: 19.5px;
+  }
+  
+  .location .card-content .material-icons
+  {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width : 620px) 
+{
+  .home .card-content .card-title
+  {
+    font-size: 22px;
+  }
+  
+  .home .card-content .material-icons
+  {
+    font-size: 20px;
+  }
+  
+  #index-banner .section 
+  {
+    top: 0;
+  }
+}
+
+@media only screen and (max-width : 600px) 
+{
+   .location .card-content .card-title
+  {
+    font-size: 22px;
+  }
+  
+  .location .card-content .material-icons
+  {
+    font-size: 20px;
+  }
+  
+  .contact .icon-block h2
+  {
+    font-size: 50px;
+  }
+  
+  .contact .icon-block h5
+  {
+    font-size: 25px;
+  }
+  
+  .contact .icon-block h6
+  {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width : 432px) 
+{
+  .home .card-content .card-title
+  {
+    font-size: 19px;
+  }
+  
+  .home .card-content .material-icons
+  {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width : 420px) 
+{
+  .location .card-content .card-title
+  {
+    font-size: 19px;
+  }
+  
+  .location .card-content .material-icons
+  {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width : 395px) 
+{
+  .home .card-content .card-title
+  {
+    font-size: 17px;
+  }
+  
+  .home .card-content .material-icons
+  {
+    font-size: 15px;
+  }
+}
+
+.icon-block 
+{
+  padding: 0 15px;
+}
+
+.icon-block .material-icons 
+{
+  font-size: inherit;
+}
+
+footer.page-footer 
+{
+  margin: 0;
+}
