@@ -9,6 +9,11 @@ p
   line-height: 2rem;
 }
 
+.opening-time
+{
+  font-size: 20px;
+}
+
 .sidenav-trigger 
 {
   color: #26a69a;
