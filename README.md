@@ -37,9 +37,9 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 3. Hari Ketiga :  
 -Melakukan Perubahan Layout dari Starter Template Materialize yang awalnya SPA (single Page) menjadi MPA (multi page)     
 -Menggunakan pengaturan script dari nav.js dan nav.html agar bisa mengubah dari SPA menjadi MPA  
--Melakukan perubahan layout untuk pembuatan website Restoran Tastefood  
 4. Hari Keempat :   
 -Pembuatan Layout Pages untuk Home.html , Menu.html , Location.html , dan Contact.html untuk memenuhi konsep MPA   
+-Melakukan perubahan layout untuk pembuatan website Restoran Tastefood  
 5. Hari Kelima :   
 -Pembuatan logo Restoran Tastefood  
 -Pencarian Color Pallete yang sesuai untuk sebuah Restoran  
