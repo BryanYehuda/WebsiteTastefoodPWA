@@ -1,7 +1,11 @@
 # WebsiteTastefood PWA
 **Ini adalah website restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web**    
 Semua Pemrograman dilakukan di Brackets, sebuah code editor khusus Website yang memiliki fitur Live Preview   
-Website ini dihosting di alamat web [Restoran Tastefood](http://bytesting.my.id/).   
+Website ini dihosting di alamat web [Restoran Tastefood](http://bytesting.my.id/).    
+Website ini sudah divalidasi oleh W3C CSS Validator     
+![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss) ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss-blue)     
+Website ini sudah divalidasi oleh W3C HTML Validator     
+![HTML Validator Badge](https://www.w3.org/Icons/valid-html401) ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401-blue) 
 
 ### Website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, dan Framework Materialize:  
 Adapun website yang saya buat saat ini sudah memenuhi:  
