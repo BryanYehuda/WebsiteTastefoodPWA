@@ -1,9 +1,9 @@
 # WebsiteTastefood PWA
-**Ini adalah website restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web**  
-Semua Pemrograman dilakukan di Brackets, sebuah code editor khusus Website yang memiliki fitur Live Preview
-Website ini dihosting di alamat web [Restoran Tastefood](http://bytesting.my.id/).
+**Ini adalah website restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web**    
+Semua Pemrograman dilakukan di Brackets, sebuah code editor khusus Website yang memiliki fitur Live Preview   
+Website ini dihosting di alamat web [Restoran Tastefood](http://bytesting.my.id/).   
 
-### website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, dan Framework Materialize:  
+### Website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, dan Framework Materialize:  
 Adapun website yang saya buat saat ini sudah memenuhi:  
 -Menampilkan 4 halaman statis, dengan menampilkan file gambar dengan tema makanan dengan fungsi MPA. (Terpenuhi)  
 -Menampilkan daftar tautan halaman di sidebar, sidebar untuk PC dan Mobile berbeda untuk memenuhi konsep Responsif dalam Navbar (Terpenuhi)  
@@ -13,7 +13,7 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 -Memiliki list yang dibuat untuk memberikan cara melakukan order sebuah menu di Restoran Tastefood. (Terpenuhi)  
 -Memiliki Link yang hiperaktif ketika dilakukan hover, link ini akan menghubungkan Website Restoran Tastefood dengan Github Repository. (Terpenuhi)  
 
-### adapun beberapa fitur yang akan segera ditambahkan ke dalam Website ini adalah:    
+### Adapun beberapa fitur yang akan segera ditambahkan ke dalam Website ini adalah:    
 -Membaca dan Menulis data ke dalam Database (ongoing)  
 -Memiliki fitur login dan session (ongoing)  
 -Memiliki fitur submit form (ongoing)  
