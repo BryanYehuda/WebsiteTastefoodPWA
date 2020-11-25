@@ -31,6 +31,7 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 -Mempelajari cara menerapkan Promise ke dalam sebuah Website  
 -Mempelajari cara menerapkan Caching Dinamis ke dalam sebuah Website  
 2. Hari Kedua :  
+-Melakukan inisiliasi Repository Github  
 -Melakukan Instalasi Framework Materialize CSS dan Materialize JS  
 -Melakukan download Starter Template Materialize  
 3. Hari Ketiga :  
