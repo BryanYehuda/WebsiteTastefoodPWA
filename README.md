@@ -67,4 +67,10 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 **Semua Testing Front End berhasil baik dalam mode online ataupun offline dan tidak ada error di console**    
 9. Hari Kesembilan:  
 -Update ke dalam Repository   
+<<<<<<< HEAD
 -Update Readme.md untuk laporan harian pembuatan Website Restoran Tastefood mata kuliah Pemrograman Web  
+=======
+-Update Readme.md untuk laporan harian pembuatan Website Restoran Tastefood mata kuliah Pemrograman Web  
+
+
+>>>>>>> 575a5acfe684f2a4703f848ce427435c170ef7ce
