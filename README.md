@@ -36,7 +36,8 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 -Melakukan download Starter Template Materialize  
 3. Hari Ketiga :  
 -Melakukan Perubahan Layout dari Starter Template Materialize yang awalnya SPA (single Page) menjadi MPA (multi page)     
--Menggunakan pengaturan script dari nav.js dan nav.html agar bisa mengubah dari SPA menjadi MPA  
+-Menggunakan pengaturan script dari nav.js dan nav.html agar bisa mengubah dari SPA menjadi MPA    
+-Menggunakan init.js untuk menginisialisasi sidebar dan navbar secara responsif
 4. Hari Keempat :   
 -Pembuatan Layout Pages untuk Home.html , Menu.html , Location.html , dan Contact.html untuk memenuhi konsep MPA   
 -Melakukan perubahan layout untuk pembuatan website Restoran Tastefood  
@@ -48,7 +49,8 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 -Pembuatan Favicon untuk logo Website  
 6. Hari Keenam :
 -Memasukkan grafik yang sudah didapatkan ke dalam Website      
--Memasukkan Color Pallete yang sudah didapatkan ke dalam Website    
+-Memasukkan Color Pallete yang sudah didapatkan ke dalam Website     
+-Pembuatan Media Query untuk mengatur Responsif di PC ataupun mobile untuk membantu grid layout yang disediakan Materialize CSS lebih indah lagi  
 -Testing Live Preview dari Website sebelum lanjut ke tahap berikutnya    
 7. Hari Ketujuh :
 -Pembuatan Service Worker dan penerapan Chain Promise ke dalam Website    
