@@ -2,9 +2,7 @@ const CACHE_NAME = 'tastefood-3';
 var urlsToCache = [
 	'/',
 	'/manifest.json',
-	'/nav.html',
 	'/index.html',
-	'/pages/home.html',
 	'/pages/location.html',
 	'/pages/contact.html',
 	'/pages/menu.html',
@@ -17,7 +15,6 @@ var urlsToCache = [
 	'/js/materialize.js',
 	'/js/script.js',
 	'/js/init.js',
-	'/js/nav.js',
 	'/images/backgroundhome.jpg',
 	'/images/food.jpg',
 	'/images/chef.jpg',
