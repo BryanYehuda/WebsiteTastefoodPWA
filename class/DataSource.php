@@ -18,7 +18,7 @@ class DataSource
 
     const PASSWORD = '';
 
-    const DATABASENAME = 'tastefood';
+    const DATABASENAME = 'phpsamples';
 
     private $conn;
 
@@ -156,4 +156,27 @@ class DataSource
         $recordCount = $stmt->num_rows;
         return $recordCount;
     }
+
+    /**
+     * To get database results
+     *
+     * @param string $query
+     * @param string $paramType
+     * @param array $paramArray
+     * @return array
+     */
+    public function getRecordCount($query, $paramType = "", $paramArray = array())
+    {
+        $stmt = $this->conn->prepare($query);
+        if (! empty($paramType) && ! empty($paramArray)) {
+
+            $this->bindQueryParams($stmt, $paramType, $paramArray);
+        }
+        $stmt->execute();
+        $stmt->store_result();
+        $recordCount = $stmt->num_rows;
+
+        return $recordCount;
+    }
+
 }

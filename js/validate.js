@@ -6,11 +6,11 @@ function validate() {
     var userName = document.getElementById("user_name").value;
     var password = document.getElementById("password").value;
     if (userName == "") {
-        document.getElementById("user_info").innerHTML = "required";
+        document.getElementById("user_info").innerHTML = "This field is required";
         $valid = false;
     }
     if (password == "") {
-        document.getElementById("password_info").innerHTML = "required";
+        document.getElementById("password_info").innerHTML = "This field is required";
         $valid = false;
     }
     return $valid;

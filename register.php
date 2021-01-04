@@ -1,3 +1,13 @@
+<?php
+use Phppot\Registration;
+if (! empty($_POST["signup-btn"])) 
+{
+    require_once 'class/Registration.php';
+    $member = new Registration();
+    $registrationResponse = $member->registerMember();
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,8 +25,10 @@
         
         <!-- Link Start -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <link href="./css/materialize.css" type="text/css" rel="stylesheet"/>
         <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/user-registration.css" type="text/css" rel="stylesheet" />
         <link rel="manifest" href="./manifest.json">
         <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
         <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
@@ -88,52 +100,56 @@
           <div class="row">
             <div class="col s10 offset-s1">
               <div class="card red lighten-2">
-                <div class="card-content white-text">
-                <span class="card-title center-align">Register Tastefood Restaurant</span>
-                <br>
-                  <div class="row">
-                    <form class="col s12">
+                 <div class="card-content white-text">
+                    <span class="card-title center-align">Register Tastefood Restaurant</span><br>
                       <div class="row">
-                        <div class="input-field col s12">
-                          <input id="alamat_email" type="text" class="validate">
-                          <label for="name">Name</label>
-                        </div>
+                        <form name="sign-up" action="" method="post" onsubmit="return signupValidation()" class="col s12">
+                          <?php if (! empty($registrationResponse["status"])) {?>
+                          <?php if ($registrationResponse["status"] == "error") {?>
+                          <div class="server-response error-msg"><?php echo $registrationResponse["message"]; ?></div>
+                          <?php } else if ($registrationResponse["status"] == "success") {?>
+                          <div class="server-response success-msg"><?php echo $registrationResponse["message"]; ?></div>
+                          <?php } ?>
+                          <?php } ?>
+                          <div class="row signup-container">
+                            <div class="input-field col s12">
+                              <label for="username">Username</label>
+                              <input name="username" id="username" type="text" class="demo-input-box">
+                              <span id="username-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="email">Email</label>
+                              <input name="email" id="email" type="email" class="demo-input-box">
+                              <span id="email-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="signup-password">Password</label>
+                              <input name="signup-password" id="signup-password" type="password" class="demo-input-box">
+                              <span id="signup-password-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <label for="confirm-password">Confirm Password</label>
+                              <input name="confirm-password" id="confirm-password" type="password" class="demo-input-box">
+                              <span id="confirm-password-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <input class="btn" type="submit" name="signup-btn" id="signup-btn" value="Sign up">
+                          </div>  
+                        </form>
                       </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input id="alamat_email" type="text" class="validate">
-                          <label for="email">Email</label>
-                        </div>
-                        <div class="input-field col s12">
-                          <input id="nama_lengkap" type="text" class="validate">
-                          <label for="username">Username</label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input id="nama_lengkap" type="text" class="validate">
-                          <label for="password">Password</label>
-                        </div>
-                        <div class="input-field col s12">
-                          <input id="nama_lengkap" type="text" class="validate">
-                          <label for="password_validate">Validate Password</label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="center-align">
-                          <button class="btn red waves-effect waves-light center-align" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                          </button>
-                        </div>
-                      </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <br>
-          <!-- Form Ends -->
+              <br>
+              <!-- Form Ends -->
 
         </div>
         <!-- Register Ends -->
@@ -161,10 +177,10 @@
     <!-- Footer End -->
     
     <!-- Script Start -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="./js/materialize.js"></script>
     <script src="./js/init.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/registration.js"></script>
     <!-- Script End -->
         
   </body>

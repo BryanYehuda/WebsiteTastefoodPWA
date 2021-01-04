@@ -46,7 +46,7 @@
     color: #f5f7fa;
     cursor: pointer;
     border-radius: 4px;
-    width: 100%;
+    width: 25%;
     border: #f32f2f 1px solid;
     font-size: 1.1em;
 }
@@ -89,7 +89,6 @@
 
 .error-info {
     color: #000;
-    margin-left: 10%;
 }
 
 a.logout-button {
