@@ -1,8 +1,6 @@
 <?php
 namespace Phppot;
 
-use \Phppot\DataSource;
-
 class Registration
 {
 
@@ -10,7 +8,7 @@ class Registration
 
     function __construct()
     {
-        require_once "DataSource.php";
+        require_once __DIR__ . '/DataSource.php';
         $this->ds = new DataSource();
     }
 
@@ -148,7 +146,7 @@ class Registration
             session_start();
             $_SESSION["username"] = $memberRecord[0]["username"];
             session_write_close();
-            $url = "./home.php";
+            $url = "./logout-form.php";
             header("Location: $url");
         } else if ($loginPassword == 0) {
             $loginStatus = "Invalid username or password.";

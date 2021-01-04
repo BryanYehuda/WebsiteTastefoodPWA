@@ -28,6 +28,7 @@ if (! empty($_POST["signup-btn"]))
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <link href="./css/materialize.css" type="text/css" rel="stylesheet"/>
         <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/session.css" type="text/css" rel="stylesheet" />
         <link href="./css/user-registration.css" type="text/css" rel="stylesheet" />
         <link rel="manifest" href="./manifest.json">
         <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
@@ -115,33 +116,35 @@ if (! empty($_POST["signup-btn"]))
                             <div class="input-field col s12">
                               <label for="username">Username</label>
                               <input name="username" id="username" type="text" class="demo-input-box">
-                              <span id="username-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                              <span id="username-info" class="error-info" style="color: rgb(0 0 0);"></span>
                             </div>
                           </div>
                           <div class="row">
                             <div class="input-field col s12">
                               <label for="email">Email</label>
                               <input name="email" id="email" type="email" class="demo-input-box">
-                              <span id="email-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                              <span id="email-info" class="error-info" style="color: rgb(0 0 0);"></span>
                             </div>
                           </div>
                           <div class="row">
                             <div class="input-field col s12">
                               <label for="signup-password">Password</label>
                               <input name="signup-password" id="signup-password" type="password" class="demo-input-box">
-                              <span id="signup-password-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                              <span id="signup-password-info" class="error-info" style="color: rgb(0 0 0);"></span>
                             </div>
                           </div>
                           <div class="row">
                             <div class="input-field col s12">
                               <label for="confirm-password">Confirm Password</label>
                               <input name="confirm-password" id="confirm-password" type="password" class="demo-input-box">
-                              <span id="confirm-password-info" class="required error" style="display: inline;color: rgb(238, 0, 0);float: left;"></span>
+                              <span id="confirm-password-info" class="error-info" style="color: rgb(0 0 0);"></span>
                             </div>
                           </div>
                           <div class="row">
-                            <input class="btn" type="submit" name="signup-btn" id="signup-btn" value="Sign up">
-                          </div>  
+                            <div class="center-align">
+                              <input type="submit" name="signup-btn" value="Sign up" id="signup-btn" class="btnLogin"></span>
+                            </div>
+                          </div> 
                         </form>
                       </div>
                     </div>

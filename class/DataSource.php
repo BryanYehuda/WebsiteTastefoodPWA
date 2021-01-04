@@ -1,17 +1,22 @@
 <?php
+/**
+ * Copyright (C) Phppot
+ *
+ * Distributed under 'The MIT License (MIT)'
+ * In essense, you can do commercial use, modify, distribute and private use.
+ * Though not mandatory, you are requested to attribute Phppot URL in your code or website.
+ */
 namespace Phppot;
 
 /**
  * Generic datasource class for handling DB operations.
  * Uses MySqli and PreparedStatements.
  *
- * @version 2.3
+ * @version 2.6 - recordCount function added
  */
 class DataSource
 {
 
-    // PHP 7.1.0 visibility modifiers are allowed for class constants.
-    // when using above 7.1.0, declare the below constants as private
     const HOST = 'localhost';
 
     const USERNAME = 'root';
@@ -46,46 +51,48 @@ class DataSource
     public function getConnection()
     {
         $conn = new \mysqli(self::HOST, self::USERNAME, self::PASSWORD, self::DATABASENAME);
-        
+
         if (mysqli_connect_errno()) {
             trigger_error("Problem with connecting to database.");
         }
-        
+
         $conn->set_charset("utf8");
         return $conn;
     }
 
     /**
      * To get database results
+     *
      * @param string $query
      * @param string $paramType
      * @param array $paramArray
      * @return array
      */
-    public function select($query, $paramType="", $paramArray=array())
+    public function select($query, $paramType = "", $paramArray = array())
     {
         $stmt = $this->conn->prepare($query);
-        
-        if(!empty($paramType) && !empty($paramArray)) {
+
+        if (! empty($paramType) && ! empty($paramArray)) {
+
             $this->bindQueryParams($stmt, $paramType, $paramArray);
         }
-        
         $stmt->execute();
         $result = $stmt->get_result();
-        
+
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 $resultset[] = $row;
             }
         }
-        
+
         if (! empty($resultset)) {
             return $resultset;
         }
     }
-    
+
     /**
      * To insert
+     *
      * @param string $query
      * @param string $paramType
      * @param array $paramArray
@@ -93,38 +100,41 @@ class DataSource
      */
     public function insert($query, $paramType, $paramArray)
     {
-        print $query;
         $stmt = $this->conn->prepare($query);
         $this->bindQueryParams($stmt, $paramType, $paramArray);
+
         $stmt->execute();
         $insertId = $stmt->insert_id;
         return $insertId;
     }
-    
+
     /**
      * To execute query
+     *
      * @param string $query
      * @param string $paramType
      * @param array $paramArray
      */
-    public function execute($query, $paramType="", $paramArray=array())
+    public function execute($query, $paramType = "", $paramArray = array())
     {
         $stmt = $this->conn->prepare($query);
-        
-        if(!empty($paramType) && !empty($paramArray)) {
-            $this->bindQueryParams($stmt, $paramType="", $paramArray=array());
+
+        if (! empty($paramType) && ! empty($paramArray)) {
+            $this->bindQueryParams($stmt, $paramType, $paramArray);
         }
         $stmt->execute();
     }
-    
+
     /**
-     * 1. Prepares parameter binding
+     * 1.
+     * Prepares parameter binding
      * 2. Bind prameters to the sql statement
+     *
      * @param string $stmt
      * @param string $paramType
      * @param array $paramArray
      */
-    public function bindQueryParams($stmt, $paramType, $paramArray=array())
+    public function bindQueryParams($stmt, $paramType, $paramArray = array())
     {
         $paramValueReference[] = & $paramType;
         for ($i = 0; $i < count($paramArray); $i ++) {
@@ -134,27 +144,6 @@ class DataSource
             $stmt,
             'bind_param'
         ), $paramValueReference);
-    }
-    
-    /**
-     * To get database results
-     * @param string $query
-     * @param string $paramType
-     * @param array $paramArray
-     * @return array
-     */
-    public function numRows($query, $paramType="", $paramArray=array())
-    {
-        $stmt = $this->conn->prepare($query);
-        
-        if(!empty($paramType) && !empty($paramArray)) {
-            $this->bindQueryParams($stmt, $paramType, $paramArray);
-        }
-        
-        $stmt->execute();
-        $stmt->store_result();
-        $recordCount = $stmt->num_rows;
-        return $recordCount;
     }
 
     /**
@@ -178,5 +167,4 @@ class DataSource
 
         return $recordCount;
     }
-
 }

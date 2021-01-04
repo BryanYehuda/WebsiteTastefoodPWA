@@ -48,13 +48,6 @@ input.input-box-330 {
     width: 250px;
 }
 
-.sign-up-container .error {
-    color: #ee0000;
-    padding: 0px;
-    background: none;
-    border: #ee0000;
-}
-
 .sign-up-container .error-field {
     border: 1px solid #d96557;
 }
@@ -79,6 +72,7 @@ input.input-box-330 {
     padding-top: 10px;
     color: #176701;
     text-align: center;
+    font-size: 200%;
 }
 
 input.btn {
@@ -87,6 +81,11 @@ input.btn {
 
 .signup-align {
     margin: 0 auto;
+}
+
+.error-info {
+    color: #000 !important;
+    float: left;
 }
 
 .page-content {

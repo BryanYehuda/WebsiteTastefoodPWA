@@ -1,3 +1,13 @@
+<?php
+use Phppot\Registration;
+
+if (! empty($_POST["login-btn"])) {
+    require_once __DIR__ . '/class/Registration.php';
+    $member = new Registration();
+    $loginResult = $member->loginMember();
+}
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,10 +25,12 @@
 
     <!-- Link Start -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <link href="./css/materialize.css" type="text/css" rel="stylesheet" />
     <link href="./css/style.css" type="text/css" rel="stylesheet" />
     <link href="./css/session.css" type="text/css" rel="stylesheet" />
-    <link rel="./manifest" href="./manifest.json">
+    <link href="./css/user-registration.css" type="text/css" rel="stylesheet" />
+    <link rel="manifest" href="./manifest.json">
     <link rel="shortcut icon" href="./view/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./view/images/favicon.ico" type="image/x-icon">
     <!-- Link End -->
@@ -93,34 +105,35 @@
                             <span class="card-title center-align">Login Tastefood Restaurant</span>
                             <br>
                             <div class="row">
-                                <form action="./login-action.php" method="post" id="frmLogin" onSubmit="return validate();" class="col s12">
-                                    <?php if(isset($_SESSION["errorMessage"])) {?>
-                                    <div class="error-message">
-                                        <?php  echo $_SESSION["errorMessage"]; ?>
+                                <form name="login" action="" method="post" onsubmit="return loginValidation()" class="col s12">
+                                <?php if(!empty($loginResult)){?>
+                                <div class="error-msg"><?php echo $loginResult;?></div>
+                                <?php }?>
+                                    <div class="row signup-align">
+                                        <div class="input-field col s12">
+                                            <label for="username">Username</label>
+                                            <input name="username" id="username" type="text" class="demo-input-box">
+                                            <span id="username-info" class="error-info" style="color: rgb(0 0 0);"></span>
+                                        </div>
                                     </div>
-                                    <?php unset($_SESSION["errorMessage"]);} ?>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <input name="user_name" id="user_name" type="text" class="demo-input-box">
-                                            <label for="username">Username</label><span id="user_info" class="error-info"></span>
-                                        </div>
-                                        <div class="input-field col s12">
-                                            <input name="password" id="password" type="password" class="demo-input-box">
-                                            <label for="password">Password</label><span id="password_info" class="error-info"></span>
+                                            <label for="login-password">Password</label>
+                                            <input name="login-password" id="login-password" type="password" class="demo-input-box">
+                                            <span id="login-password-info" class="error-info" style="color: rgb(0 0 0);"></span>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="center-align">
-                                            <input type="submit" name="login" value="Login" class="btnLogin"></span>
+                                            <input type="submit" name="login-btn" value="Login" id="login-btn" class="btnLogin"></span>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <br>
+            </div>               
             <!-- Form Ends -->
 
         </div>
@@ -149,7 +162,6 @@
     <!-- Footer End -->
 
     <!-- Script Start -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="./js/materialize.js"></script>
     <script src="./js/init.js"></script>
     <script src="./js/script.js"></script>

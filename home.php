@@ -1,5 +1,18 @@
 <?php
 session_start();
+if (isset($_SESSION["username"])) {
+    $username = $_SESSION["username"];
+    session_write_close();
+} else {
+    // since the username is not set in session, the user is not-logged-in
+    // he is trying to access this page unauthorized
+    // so let's clear all session variables and redirect him to index
+    session_unset();
+    session_write_close();
+    $url = "./index.php";
+    header("Location: $url");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -37,7 +50,7 @@ session_start();
                 <li><a class="waves-effect" href="menu.php">Our Menu</a></li>
                 <li><a class="waves-effect" href="location.php">Location</a></li>
                 <li><a class="waves-effect" href="contact.php">Contact</a></li>
-                <?php if(!empty($_SESSION["userId"])) 
+                <?php if(!empty($_SESSION["username"])) 
                 {
                     echo '<li><a class="waves-effect" href="dashboard.php">Orders</a></li>';
                     echo '<li><a class="waves-effect" href="index.php">Logout</a></li>';
@@ -53,7 +66,7 @@ session_start();
                 <li><a class="waves-effect" href="menu.php">Our Menu</a></li>
                 <li><a class="waves-effect" href="location.php">Location</a></li>
                 <li><a class="waves-effect" href="contact.php">Contact</a></li>
-                <?php if(!empty($_SESSION["userId"])) 
+                <?php if(!empty($_SESSION["username"])) 
                 {
                     echo '<li><a class="waves-effect" href="dashboard.php">Orders</a></li>';
                     echo '<li><a class="waves-effect" href="index.php">Logout</a></li>';

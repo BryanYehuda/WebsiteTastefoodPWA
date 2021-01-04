@@ -1,17 +1,26 @@
-function validate() {
-    var $valid = true;
-    document.getElementById("user_info").innerHTML = "";
-    document.getElementById("password_info").innerHTML = "";
+function loginValidation() {
+    var valid = true;
+    $("#username").removeClass("error-field");
+    $("#password").removeClass("error-field");
 
-    var userName = document.getElementById("user_name").value;
-    var password = document.getElementById("password").value;
-    if (userName == "") {
-        document.getElementById("user_info").innerHTML = "This field is required";
-        $valid = false;
+    var UserName = $("#username").val();
+    var Password = $('#login-password').val();
+
+    $("#username-info").html("").hide();
+
+    if (UserName.trim() == "") {
+        $("#username-info").html("This field is required").css("color", "#ee0000").show();
+        $("#username").addClass("error-field");
+        valid = false;
     }
-    if (password == "") {
-        document.getElementById("password_info").innerHTML = "This field is required";
-        $valid = false;
+    if (Password.trim() == "") {
+        $("#login-password-info").html("This field is required.").css("color", "#ee0000").show();
+        $("#login-password").addClass("error-field");
+        valid = false;
     }
-    return $valid;
+    if (valid == false) {
+        $('.error-field').first().focus();
+        valid = false;
+    }
+    return valid;
 }
