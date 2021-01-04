@@ -13,6 +13,9 @@ if (isset($_SESSION["username"])) {
     header("Location: $url");
 }
 
+	require_once("db.php");
+	$sql = "SELECT * FROM orders ORDER BY userId DESC";
+	$result = mysqli_query($conn,$sql);
 ?>
 
 <!DOCTYPE html>
@@ -107,37 +110,45 @@ if (isset($_SESSION["username"])) {
             <div class="col s10 offset-s1">
               <div class="card red lighten-2">
                 <div class="card-content white-text">
-                <span class="card-title center-align">Order Tastefood Restaurant</span>
+                <span class="card-title center-align">All of your orders from Tastefood</span>
                 <br>
                   <div class="row">
-                    <form class="col s12">
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input id="alamat_email" type="text" class="validate">
-                          <label for="first_name">First Name</label>
-                        </div>
-                        <div class="input-field col s12">
-                          <input id="nama_lengkap" type="text" class="validate">
-                          <label for="address">Address</label>
-                        </div>
+                    <form name="frmUser" method="post" action="" class="col s12"> 
+                      <div class="message"><?php if(isset($message)) { echo $message; } ?></div>
+                      <div style="padding-bottom:5px;">
+                        <a href="add_order.php" class="link">
+                          <i class="medium material-icons white-text right">add</i> 
+                        </a>
                       </div>
-                      <div class="row">
-                        <div class="input-field col s12">
-                          <input id="alamat_email" type="text" class="validate">
-                          <label for="email">Email</label>
-                        </div>
-                        <div class="input-field col s12">
-                          <input id="nama_lengkap" type="text" class="validate">
-                          <label for="password">Orders</label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="center-align">
-                          <button class="btn red waves-effect waves-light center-align" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                          </button>
-                        </div>
-                      </div>
+                      <br><br><br>
+                      <table class="highlight centered responsive-table">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Orders</th>
+                            <th>Commands</th>
+                          </tr>
+                        </thead>
+                        <?php
+                        $i=0;
+                        while($row = mysqli_fetch_array($result)) 
+                        {
+                          if($i%2==0)
+                          $classname="evenRow";
+                          else
+                          $classname="oddRow";
+                        ?>
+                        <tbody>
+                          <tr class="<?php if(isset($classname)) echo $classname;?>">
+                            <td><?php echo $row["name"]; ?></td>
+                            <td><?php echo $row["address"]; ?></td>
+                            <td><?php echo $row["orders"]; ?></td>
+                            <td><a href="delete_order.php?userId=<?php echo $row["userId"]; ?>"  class="link"><i class="small material-icons white-text">delete</i></a></td>
+                          </tr>
+                        </tbody>
+                        <?php $i++;} ?>
+                      </table>
                     </form>
                   </div>
                 </div>
@@ -150,7 +161,7 @@ if (isset($_SESSION["username"])) {
         </div>
         <!-- Order Ends -->
         
-    </div>../
+    </div>
     <!-- Content End -->
        
     <!-- Footer Start -->

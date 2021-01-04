@@ -20,7 +20,7 @@ class Registration
      */
     public function isUsernameExists($username)
     {
-        $query = 'SELECT * FROM tbl_member where username = ?';
+        $query = 'SELECT * FROM member where username = ?';
         $paramType = 's';
         $paramValue = array(
             $username
@@ -46,7 +46,7 @@ class Registration
      */
     public function isEmailExists($email)
     {
-        $query = 'SELECT * FROM tbl_member where email = ?';
+        $query = 'SELECT * FROM member where email = ?';
         $paramType = 's';
         $paramValue = array(
             $email
@@ -90,7 +90,7 @@ class Registration
                 // do not attempt to do your own encryption, it is not safe
                 $hashedPassword = password_hash($_POST["signup-password"], PASSWORD_DEFAULT);
             }
-            $query = 'INSERT INTO tbl_member (username, password, email) VALUES (?, ?, ?)';
+            $query = 'INSERT INTO member (username, password, email) VALUES (?, ?, ?)';
             $paramType = 'sss';
             $paramValue = array(
                 $_POST["username"],
@@ -110,7 +110,7 @@ class Registration
 
     public function getMember($username)
     {
-        $query = 'SELECT * FROM tbl_member where username = ?';
+        $query = 'SELECT * FROM member where username = ?';
         $paramType = 's';
         $paramValue = array(
             $username
