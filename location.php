@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -15,11 +19,11 @@
         
         <!-- Link Start -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="../css/materialize.css" type="text/css" rel="stylesheet"/>
-        <link href="../css/style.css" type="text/css" rel="stylesheet"/>
-        <link rel="manifest" href="../manifest.json">
-        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <link href="./css/materialize.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/style.css" type="text/css" rel="stylesheet"/>
+        <link rel="manifest" href="./manifest.json">
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
         <!-- Link End -->
     </head>
     
@@ -27,24 +31,38 @@
     <!-- Navbar Start -->
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="../images/logo.png" width="60" height="auto"></a>
+            <a id="logo-container" href="#" class="brand-logo"><img class="responsive-img" src="./images/logo.png" width="60" height="auto"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a class="waves-effect" href="../index.html">Home</a></li>
-                <li><a class="waves-effect" href="menu.html">Our Menu</a></li>
-                <li><a class="waves-effect" href="location.html">Location</a></li>
-                <li><a class="waves-effect" href="contact.html">Contact</a></li>
-                <li><a class="waves-effect" href="login.html">Login</a></li>
-                <li><a class="waves-effect" href="register.html">Register</a></li>
-                <li><a class="waves-effect" href="order.html">Orders</a></li>
+                <li><a class="waves-effect" href="home.php">Home</a></li>
+                <li><a class="waves-effect" href="menu.php">Our Menu</a></li>
+                <li><a class="waves-effect" href="location.php">Location</a></li>
+                <li><a class="waves-effect" href="contact.php">Contact</a></li>
+                <?php if(!empty($_SESSION["userId"])) 
+                {
+                    echo '<li><a class="waves-effect" href="dashboard.php">Orders</a></li>';
+                    echo '<li><a class="waves-effect" href="index.php">Logout</a></li>';
+                }
+                else
+                {
+                    echo '<li><a class="waves-effect" href="login-form.php">Login</a></li>';   
+                    echo '<li><a class="waves-effect" href="register.php">Register</a></li>';
+                };?>
             </ul>
             <ul id="nav-mobile" class="sidenav">
-                <li><a class="waves-effect" href="../index.html">Home</a></li>
-                <li><a class="waves-effect" href="menu.html">Our Menu</a></li>
-                <li><a class="waves-effect" href="location.html">Location</a></li>
-                <li><a class="waves-effect" href="contact.html">Contact</a></li>
-                <li><a class="waves-effect" href="login.html">Login</a></li>
-                <li><a class="waves-effect" href="register.html">Register</a></li>
-                <li><a class="waves-effect" href="order.html">Orders</a></li>
+                <li><a class="waves-effect" href="home.php">Home</a></li>
+                <li><a class="waves-effect" href="menu.php">Our Menu</a></li>
+                <li><a class="waves-effect" href="location.php">Location</a></li>
+                <li><a class="waves-effect" href="contact.php">Contact</a></li>
+                <?php if(!empty($_SESSION["userId"])) 
+                {
+                    echo '<li><a class="waves-effect" href="dashboard.php">Orders</a></li>';
+                    echo '<li><a class="waves-effect" href="index.php">Logout</a></li>';
+                }
+                else
+                {
+                    echo '<li><a class="waves-effect" href="login-form.php">Login</a></li>';   
+                    echo '<li><a class="waves-effect" href="register.php">Register</a></li>';
+                };?>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -87,7 +105,7 @@
             <div class="col s12 m8 offset-m2">
               <div class="card hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src="/images/location.jpg">
+                  <img class="activator" src="./images/location.jpg">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4 center-align">Our humble cozy little place<i class="material-icons right">arrow_downward</i></span>
@@ -131,9 +149,9 @@
     
     <!-- Script Start -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="../js/materialize.js"></script>
-    <script src="../js/init.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="./js/materialize.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/script.js"></script>
     <!-- Script End -->
         
   </body>

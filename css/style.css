@@ -1,267 +1,185 @@
 nav ul a,
-nav .brand-logo 
-{
-  color: #444;
+nav .brand-logo {
+    color: #444;
 }
 
-p 
-{
-  line-height: 2rem;
+p {
+    line-height: 2rem;
 }
 
-.opening-time
-{
-  font-size: 20px;
+.opening-time {
+    font-size: 20px;
 }
 
-.sidenav-trigger 
-{
-  color: #26a69a;
+.sidenav-trigger {
+    color: #26a69a;
 }
 
-.how-to-order li
-{
-  text-align: justify;
-  font-size: 20px;
+.how-to-order li {
+    text-align: justify;
+    font-size: 20px;
 }
 
-.how-to-order h4
-{
-  text-align: center;
+.how-to-order h4 {
+    text-align: center;
 }
 
 .footer-copyright a:link,
-.footer-copyright a:visited
-{
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid #fff;
-  padding-bottom: 1px;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
-  transition: border-bottom 0.2s, color 0.2s;
+.footer-copyright a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1px;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
 }
 
 .footer-copyright a:hover,
-.footer-copyright a:active
-{
-  color: #000;
-  border-bottom: 1px solid transparent;
+.footer-copyright a:active {
+    color: #000;
+    border-bottom: 1px solid transparent;
 }
 
-@media only screen and (max-width : 1184px) 
-{
-  
-  .how-to-order li
-  {
-    font-size: 19.5px;
-  }
-  
-  .home .card-content .card-title
-  {
-    font-size: 20px;
-  }
-  
-  .home .card-content .material-icons
-  {
-    font-size: 18px;
-  }
-  
-  .home .icon-block h4
-  {
-    font-size: 28px;
-  }
-  
-  .home .icon-block h5
-  {
-    font-size: 22px;
-  }
+@media only screen and (max-width: 1184px) {
+    .how-to-order li {
+        font-size: 19.5px;
+    }
+    .home .card-content .card-title {
+        font-size: 20px;
+    }
+    .home .card-content .material-icons {
+        font-size: 18px;
+    }
+    .home .icon-block h4 {
+        font-size: 28px;
+    }
+    .home .icon-block h5 {
+        font-size: 22px;
+    }
 }
 
-@media only screen and (max-width : 1071px) 
-{
-  .home .how-to h2
-  {
-    font-size: 45px;
-  }
-  
-  .home .how-to h4
-  {
-    font-size: 28px;
-  }
-  
-  .how-to-order li
-  {
-    font-size: 19px;
-  }
+@media only screen and (max-width: 1071px) {
+    .home .how-to h2 {
+        font-size: 45px;
+    }
+    .home .how-to h4 {
+        font-size: 28px;
+    }
+    .how-to-order li {
+        font-size: 19px;
+    }
 }
 
-@media only screen and (max-width : 992px) 
-{
-  .home .card-content .card-title
-  {
-    font-size: 25px;
-  }
-  
-  .home .card-content .material-icons
-  {
-    font-size: 25px;
-  }
-  
-  #index-banner .section 
-  {
-    top: 10%;
-  }
+@media only screen and (max-width: 992px) {
+    .home .card-content .card-title {
+        font-size: 25px;
+    }
+    .home .card-content .material-icons {
+        font-size: 25px;
+    }
+    #index-banner .section {
+        top: 10%;
+    }
 }
 
-@media only screen and (max-width : 740px) 
-{
-  .contact .icon-block h2
-  {
-    font-size: 40px;
-  }
-  
-  .contact .icon-block h5
-  {
-    font-size: 18px;
-  }
-  
-  .contact .icon-block h6
-  {
-    font-size: 16px;
-  }
-  
-  .how-to-order li
-  {
-    font-size: 18.5px;
-  }
-  
+@media only screen and (max-width: 740px) {
+    .contact .icon-block h2 {
+        font-size: 40px;
+    }
+    .contact .icon-block h5 {
+        font-size: 18px;
+    }
+    .contact .icon-block h6 {
+        font-size: 16px;
+    }
+    .how-to-order li {
+        font-size: 18.5px;
+    }
 }
 
-@media only screen and (max-width : 710px) 
-{
-  
-  .how-to-order li
-  {
-    font-size: 18px;
-  }
-  
-  .location .card-content .card-title
-  {
-    font-size: 19.5px;
-  }
-  
-  .location .card-content .material-icons
-  {
-    font-size: 17px;
-  }
+@media only screen and (max-width: 710px) {
+    .how-to-order li {
+        font-size: 18px;
+    }
+    .location .card-content .card-title {
+        font-size: 19.5px;
+    }
+    .location .card-content .material-icons {
+        font-size: 17px;
+    }
 }
 
-@media only screen and (max-width : 620px) 
-{
-  .how-to-order li
-  {
-    font-size: 17.5px;
-  }
-  
-  .home .card-content .card-title
-  {
-    font-size: 22px;
-  }
-  
-  .home .card-content .material-icons
-  {
-    font-size: 20px;
-  }
-  
-  #index-banner .section 
-  {
-    top: 0;
-  }
+@media only screen and (max-width: 620px) {
+    .how-to-order li {
+        font-size: 17.5px;
+    }
+    .home .card-content .card-title {
+        font-size: 22px;
+    }
+    .home .card-content .material-icons {
+        font-size: 20px;
+    }
+    #index-banner .section {
+        top: 0;
+    }
 }
 
-@media only screen and (max-width : 600px) 
-{
-   .location .card-content .card-title
-  {
-    font-size: 22px;
-  }
-  
-  .location .card-content .material-icons
-  {
-    font-size: 20px;
-  }
-  
-  .contact .icon-block h2
-  {
-    font-size: 50px;
-  }
-  
-  .contact .icon-block h5
-  {
-    font-size: 25px;
-  }
-  
-  .contact .icon-block h6
-  {
-    font-size: 22px;
-  }
+@media only screen and (max-width: 600px) {
+    .location .card-content .card-title {
+        font-size: 22px;
+    }
+    .location .card-content .material-icons {
+        font-size: 20px;
+    }
+    .contact .icon-block h2 {
+        font-size: 50px;
+    }
+    .contact .icon-block h5 {
+        font-size: 25px;
+    }
+    .contact .icon-block h6 {
+        font-size: 22px;
+    }
 }
 
-@media only screen and (max-width : 432px) 
-{
-  .how-to-order li
-  {
-    font-size: 16px;
-  }
-  
-  .home .card-content .card-title
-  {
-    font-size: 19px;
-  }
-  
-  .home .card-content .material-icons
-  {
-    font-size: 17px;
-  }
+@media only screen and (max-width: 432px) {
+    .how-to-order li {
+        font-size: 16px;
+    }
+    .home .card-content .card-title {
+        font-size: 19px;
+    }
+    .home .card-content .material-icons {
+        font-size: 17px;
+    }
 }
 
-@media only screen and (max-width : 420px) 
-{
-  .location .card-content .card-title
-  {
-    font-size: 19px;
-  }
-  
-  .location .card-content .material-icons
-  {
-    font-size: 17px;
-  }
+@media only screen and (max-width: 420px) {
+    .location .card-content .card-title {
+        font-size: 19px;
+    }
+    .location .card-content .material-icons {
+        font-size: 17px;
+    }
 }
 
-@media only screen and (max-width : 395px) 
-{
-  .home .card-content .card-title
-  {
-    font-size: 17px;
-  }
-  
-  .home .card-content .material-icons
-  {
-    font-size: 15px;
-  }
+@media only screen and (max-width: 395px) {
+    .home .card-content .card-title {
+        font-size: 17px;
+    }
+    .home .card-content .material-icons {
+        font-size: 15px;
+    }
 }
 
-.icon-block 
-{
-  padding: 0 15px;
+.icon-block {
+    padding: 0 15px;
 }
 
-.icon-block .material-icons 
-{
-  font-size: inherit;
+.icon-block .material-icons {
+    font-size: inherit;
 }
 
-footer.page-footer 
-{
-  margin: 0;
+footer.page-footer {
+    margin: 0;
 }
