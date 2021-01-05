@@ -71,10 +71,27 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 **Semua Testing Front End berhasil baik dalam mode online ataupun offline dan tidak ada error di console**    
 9. Hari Kesembilan:  
 -Update ke dalam Repository   
-<<<<<<< HEAD
--Update Readme.md untuk laporan harian pembuatan Website Restoran Tastefood mata kuliah Pemrograman Web  
-=======
--Update Readme.md untuk laporan harian pembuatan Website Restoran Tastefood mata kuliah Pemrograman Web  
-
-
->>>>>>> 575a5acfe684f2a4703f848ce427435c170ef7ce
+10. Hari Kesepuluh:  
+-Menambahkan Form Login User, agar user dapat melakukan login    
+-Menambahkan Form Register User, agar user dapat melakukan register user     
+-Menambahkan Form Order, agar user dapat melakukan pemesanan makanan ke dalam restoran Tastefood      
+11. Hari Kesebelas:   
+-Melakukan perubahan bentuk Website yang awalnya SPA menjadi MPA agar bisa lebih sesuai dengan keperluan website    
+12. Hari Keduabelas:    
+-Menambahkan User Session dengan fungsi Login dan Logout    
+-Login dengan password sudah menggunakan fungsi Hashing untuk tambahan keamanan     
+13. Hari Ketigabelas:  
+-Menambahkan fungsi Register User, agar user dapat membuat akunnya sendiri untuk login ke Tastefood      
+-Register dengan password sudah menggunakan fungsi Hashing untuk tambahan keamanan      
+14. Hari Keempatbelas:    
+-Melakukan minor fix terhadap bug dan testing terhadap user session dan fitur LOGIN, LOGOUT, dan REGISTER    
+**Semua Testing User Session berhasil baik dalam mode online ataupun offline dan tidak ada error di console**    
+15. Hari Kelimabelas:    
+-Menambahkan fungsi Create Order, agar user bisa menambahkan order   
+-Menambahkan fungsi Read Order, agar table di form Order dapat membaca order apa saja yang sudah masuk    
+-Menambahkan fungsi Delete Order, agar user dapat menghapus order
+16. Hari Keenambelas:  
+-Melakukan minor fix terhadap bug dan testing terhadap CRD yang ada di dalam Website     
+-Melakukan hosting terhadap Website Tastefood di alamat web tastefood.my.id   
+-Melakukan update terhadap diary / laporan progress website
+**Semua Testing CRD berhasil baik dalam mode online ataupun offline dan tidak ada error di console**
