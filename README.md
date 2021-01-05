@@ -33,43 +33,43 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 -JS Rookie 100 (dari Mata Kuliah Pemrograman Web)  
 
 ### Log Harian Update dan Commit Website Tastefood:  
-1. Hari Pertama :        
+1. Hari Pertama (20 Oktober 2020) :        
 -Mempelajari Framework Materialize CSS dan Materialize JS  
 -Mempelajari cara menerapkan Service Worker ke dalam sebuah Website  
 -Mempelajari cara menerapkan Promise ke dalam sebuah Website  
 -Mempelajari cara menerapkan Caching Dinamis ke dalam sebuah Website  
-2. Hari Kedua :  
+2. Hari Kedua (22 Oktober 2020):  
 -Melakukan inisiliasi Repository Github  
 -Melakukan Instalasi Framework Materialize CSS dan Materialize JS  
 -Melakukan download Starter Template Materialize  
-3. Hari Ketiga :  
+3. Hari Ketiga (25 Oktober 2020):  
 -Melakukan Perubahan Layout dari Starter Template Materialize yang awalnya SPA (single Page) menjadi MPA (multi page)          
 -Menggunakan pengaturan script dari nav.js dan nav.html agar bisa mengubah dari SPA menjadi MPA     
 -Menggunakan init.js untuk menginisialisasi sidebar dan navbar secara responsif
-4. Hari Keempat :   
--Pembuatan Layout Pages untuk Home.html , Menu.html , Location.html , dan Contact.html untuk memenuhi konsep MPA   
--Melakukan perubahan layout untuk pembuatan website Restoran Tastefood  
-5. Hari Kelima :   
+4. Hari Keempat (31 Oktober 2020):   
+-Pembuatan Landing Pages untuk Home.html , Menu.html , Location.html , dan Contact.html untuk memenuhi konsep MPA   
+-Melakukan perubahan layout untuk pembuatan website Restoran Tastefood    
+5. Hari Kelima (7 November 2020):   
 -Pembuatan logo Restoran Tastefood  
--Pencarian Color Pallete yang sesuai untuk sebuah Restoran  
--Pencarian grafik dan images dari menu, lokasi, dan koki  
--Pencarian icon dari Materialize untuk kontak Website  
--Pembuatan Favicon untuk logo Website  
-6. Hari Keenam :
--Memasukkan grafik yang sudah didapatkan ke dalam Website      
--Memasukkan Color Pallete yang sudah didapatkan ke dalam Website     
+-Pencarian Color Pallete yang sesuai untuk sebuah Restoran    
+-Pencarian grafik dan images dari menu, lokasi, dan koki    
+-Pencarian icon dari Materialize untuk kontak Website    
+-Pembuatan Favicon untuk logo Website    
+-Memasukkan grafik yang sudah didapatkan ke dalam Website    
+-Memasukkan Color Pallete yang sudah didapatkan ke dalam Website   
+6. Hari Keenam (13 November 2020):    
 -Pembuatan Media Query untuk mengatur Responsif di PC ataupun mobile untuk membantu grid layout yang disediakan Materialize CSS lebih indah lagi  
 -Testing Live Preview dari Website sebelum lanjut ke tahap berikutnya    
-7. Hari Ketujuh :
+7. Hari Ketujuh (15-16 November 2020):
 -Pembuatan Service Worker dan penerapan Chain Promise ke dalam Website    
 -Melakukan Caching semua asset website ke dalam Service Worker tetap bisa digunakan dalam keadaan offline    
 -Pembuatan Script.js untuk melakukan register Service Worker  
-8. Hari Kedelapan:  
+8. Hari Kedelapan (17 November 2020):  
 -Pembuatan Manifest.json untuk memberikan identitas ke dalam Website Tastefood  
 -Pembuatan logo Restoran Tastefood dalam berbagai macam ukuran untuk memenuhi SEO Google dengan preview yang Any Maskable  
 -Testing terakhir Front End dari Website Tastefood  
 **Semua Testing Front End berhasil baik dalam mode online ataupun offline dan tidak ada error di console**    
-9. Hari Kesembilan:  
+9. Hari Kesembilan (18 November 2020):  
 -Update ke dalam Repository   
 10. Hari Kesepuluh:  
 -Menambahkan Form Login User, agar user dapat melakukan login    
