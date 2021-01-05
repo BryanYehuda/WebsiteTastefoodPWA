@@ -13,11 +13,9 @@ class Registration
     }
 
     /**
-     * to check if the username already exists
-     *
      * @param string $username
      * @return boolean
-     */
+     **/
     public function isUsernameExists($username)
     {
         $query = 'SELECT * FROM member where username = ?';
@@ -39,11 +37,9 @@ class Registration
     }
 
     /**
-     * to check if the email already exists
-     *
      * @param string $email
      * @return boolean
-     */
+     **/
     public function isEmailExists($email)
     {
         $query = 'SELECT * FROM member where email = ?';
@@ -65,10 +61,8 @@ class Registration
     }
 
     /**
-     * to signup / register a user
-     *
      * @return string[] registration status message
-     */
+     **/
     public function registerMember()
     {
         $isUsernameExists = $this->isUsernameExists($_POST["username"]);
@@ -85,9 +79,6 @@ class Registration
             );
         } else {
             if (! empty($_POST["signup-password"])) {
-
-                // PHP's password_hash is the best choice to use to store passwords
-                // do not attempt to do your own encryption, it is not safe
                 $hashedPassword = password_hash($_POST["signup-password"], PASSWORD_DEFAULT);
             }
             $query = 'INSERT INTO member (username, password, email) VALUES (?, ?, ?)';
@@ -120,10 +111,8 @@ class Registration
     }
 
     /**
-     * to login a user
-     *
      * @return string
-     */
+     **/
     public function loginMember()
     {
         $memberRecord = $this->getMember($_POST["username"]);
@@ -141,8 +130,6 @@ class Registration
             $loginPassword = 0;
         }
         if ($loginPassword == 1) {
-            // login sucess so store the member's username in
-            // the session
             session_start();
             $_SESSION["username"] = $memberRecord[0]["username"];
             session_write_close();

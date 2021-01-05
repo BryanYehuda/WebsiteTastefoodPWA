@@ -30,6 +30,7 @@ var urlsToCache = [
     '/js/validate.js',
     '/js/registration.js',
     '/images/backgroundhome.jpg',
+    '/images/profile.jpg',
     '/images/food.jpg',
     '/images/chef.jpg',
     '/images/logo.png',
