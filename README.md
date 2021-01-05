@@ -1,32 +1,36 @@
 # WebsiteTastefood PWA
-**Ini adalah website restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web**    
-Semua Pemrograman dilakukan di Brackets, sebuah code editor khusus Website yang memiliki fitur Live Preview   
-Website ini dihosting di alamat web [Restoran Tastefood](http://bytesting.my.id/).    
+**Ini adalah website restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web ITS**    
+Semua Pemrograman dilakukan di Brackets dan Visual Studio Code, sebuah code editor khusus Website yang memiliki fitur Live Preview   
+Website ini dihosting di alamat web [Tastefood Restaurant](http://tastefood.my.id/).    
 Website ini sudah divalidasi oleh W3C CSS Validator     
 ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss) ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss-blue)     
 Website ini sudah divalidasi oleh W3C HTML Validator     
 ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401) ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401-blue) 
 
-### Website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, dan Framework Materialize:  
+### Website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, Framework Materialize, PHP Versi 7.3, MySQL, dan Javascript standar ES6:  
 Adapun website yang saya buat saat ini sudah memenuhi:  
--Menampilkan 4 halaman statis, dengan menampilkan file gambar dengan tema makanan dengan fungsi MPA. (Terpenuhi)  
--Menampilkan daftar tautan halaman di sidebar, sidebar untuk PC dan Mobile berbeda untuk memenuhi konsep Responsif dalam Navbar (Terpenuhi)  
--Menerapkan konsep responsive untuk setiap konten yang ada di Website. (Terpenuhi)    
+-Menampilkan 9 halaman, dengan menampilkan file gambar dengan tema makanan dengan fungsi MPA. (Terpenuhi)  
+-Menampilkan daftar tautan halaman di Navbar untuk PC dan sidebar untuk Mobile yang sedikit berbeda untuk memenuhi konsep Responsive dalam Navbar (Terpenuhi)  
+-Menerapkan konsep responsive untuk setiap konten yang ada di Website menggunakan Framework Materialize dan Media Queries. (Terpenuhi)    
 -Menerapkan fitur add to homescreen, dengan menyertakan ikon dan splash screen menggunakan PWA. (Terpenuhi)    
 -Dapat diakses dalam mode offline tanpa ada satupun aset dan konten yang broken sejak akses pertama menggunakan caching Service Worker. (Terpenuhi)  
 -Memiliki list yang dibuat untuk memberikan cara melakukan order sebuah menu di Restoran Tastefood. (Terpenuhi)  
 -Memiliki Link yang hiperaktif ketika dilakukan hover, link ini akan menghubungkan Website Restoran Tastefood dengan Github Repository. (Terpenuhi)  
+-Memiliki Page LOGIN dan REGISTER akun yang berguna agar user yang ingin mengakses website ini bisa mendapatkan session mereka masing-masing. (Terpenuhi)  
+-Setiap kali User melakukan LOGIN atau REGISTER, password mereka sudah dilakukan hashing untuk menambah keamanan website. (Terpenuhi) 
+-Memiliki sebuah page yang dapat melakukan CREATE, READ, dan DELETE ke dalam database untuk melakukan order di Restoran Tastefood. (Terpenuhi)   
+-Memiliki sebuah page yang dapat melakukan READ dari database dan menampilkannya dalam bentuk table untuk list makanan apa saja yang dipesan. (Terpenuhi)
+-Memiliki sebuah page yang dapat melakukan SUBMIT dan FORM ACTION ke dalam database. (Terpenuhi)
 
 ### Adapun beberapa fitur yang akan segera ditambahkan ke dalam Website ini adalah:    
--Membaca dan Menulis data ke dalam Database (ongoing)  
--Memiliki fitur login dan session (ongoing)  
--Memiliki fitur submit form (ongoing)  
--Memiliki table untuk penyimpanan data (ongoing)  
--Password Hashing untuk menjaga keamanan sandi user (ongoing)  
+-Semua fitur yang diminta oleh Mata Kuliah Pemrograman Web ITS sudah ditambahkan 
 
 ### Website ini juga sudah memiliki penghargaan:  
 -HTML Rookie Leader (dari Mata Kuliah Pemrograman Web)  
 -HTML Rookie 100 (dari Mata Kuliah Pemrograman Web)  
+-CSS Rookie 100 (dari Mata Kuliah Pemrograman Web)
+-JS Rookie Leader (dari Mata Kuliah Pemrograman Web)
+-JS Rookie 100 (dari Mata Kuliah Pemrograman Web)
 
 ### Log Harian Update dan Commit Website Tastefood:  
 1. Hari Pertama :        
