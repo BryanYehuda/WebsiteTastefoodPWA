@@ -1,6 +1,6 @@
 # WebsiteTastefood PWA
 **Ini adalah website restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web ITS**    
-Semua Pemrograman dilakukan di Brackets dan Visual Studio Code, sebuah code editor khusus Website yang memiliki fitur Live Preview   
+Semua Pemrograman dilakukan di Brackets dan Visual Studio Code, code editor khusus Website yang memiliki fitur Live Preview   
 Website ini dihosting di alamat web [Tastefood Restaurant](http://tastefood.my.id/).    
 Website ini sudah divalidasi oleh W3C CSS Validator     
 ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss) ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss-blue)     
@@ -14,23 +14,23 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 -Menerapkan konsep responsive untuk setiap konten yang ada di Website menggunakan Framework Materialize dan Media Queries. (Terpenuhi)    
 -Menerapkan fitur add to homescreen, dengan menyertakan ikon dan splash screen menggunakan PWA. (Terpenuhi)    
 -Dapat diakses dalam mode offline tanpa ada satupun aset dan konten yang broken sejak akses pertama menggunakan caching Service Worker. (Terpenuhi)  
--Memiliki list yang dibuat untuk memberikan cara melakukan order sebuah menu di Restoran Tastefood. (Terpenuhi)  
--Memiliki Link yang hiperaktif ketika dilakukan hover, link ini akan menghubungkan Website Restoran Tastefood dengan Github Repository. (Terpenuhi)  
--Memiliki Page LOGIN dan REGISTER akun yang berguna agar user yang ingin mengakses website ini bisa mendapatkan session mereka masing-masing. (Terpenuhi)  
--Setiap kali User melakukan LOGIN atau REGISTER, password mereka sudah dilakukan hashing untuk menambah keamanan website. (Terpenuhi) 
--Memiliki sebuah page yang dapat melakukan CREATE, READ, dan DELETE ke dalam database untuk melakukan order di Restoran Tastefood. (Terpenuhi)   
--Memiliki sebuah page yang dapat melakukan READ dari database dan menampilkannya dalam bentuk table untuk list makanan apa saja yang dipesan. (Terpenuhi)
--Memiliki sebuah page yang dapat melakukan SUBMIT dan FORM ACTION ke dalam database. (Terpenuhi)
+-Memiliki list yang dibuat untuk memberikan cara melakukan order sebuah menu di Restoran Tastefood. (Terpenuhi)    
+-Memiliki Link yang hiperaktif ketika dilakukan hover, link ini akan menghubungkan Website Restoran Tastefood dengan Github Repository. (Terpenuhi)    
+-Memiliki Page LOGIN dan REGISTER akun yang berguna agar user yang ingin mengakses website ini bisa mendapatkan session mereka masing-masing. (Terpenuhi)    
+-Setiap kali User melakukan LOGIN atau REGISTER, password mereka sudah dilakukan hashing untuk menambah keamanan website. (Terpenuhi)   
+-Memiliki sebuah page yang dapat melakukan CREATE, READ, dan DELETE ke dalam database untuk melakukan order di Restoran Tastefood. (Terpenuhi)      
+-Memiliki sebuah page yang dapat melakukan READ dari database dan menampilkannya dalam bentuk table untuk list makanan apa saja yang dipesan. (Terpenuhi)   
+-Memiliki sebuah page yang dapat melakukan SUBMIT dan FORM ACTION ke dalam database. (Terpenuhi)   
 
 ### Adapun beberapa fitur yang akan segera ditambahkan ke dalam Website ini adalah:    
 -Semua fitur yang diminta oleh Mata Kuliah Pemrograman Web ITS sudah ditambahkan 
 
 ### Website ini juga sudah memiliki penghargaan:  
--HTML Rookie Leader (dari Mata Kuliah Pemrograman Web)  
--HTML Rookie 100 (dari Mata Kuliah Pemrograman Web)  
--CSS Rookie 100 (dari Mata Kuliah Pemrograman Web)
--JS Rookie Leader (dari Mata Kuliah Pemrograman Web)
--JS Rookie 100 (dari Mata Kuliah Pemrograman Web)
+-HTML Rookie Leader (dari Mata Kuliah Pemrograman Web)    
+-HTML Rookie 100 (dari Mata Kuliah Pemrograman Web)      
+-CSS Rookie 100 (dari Mata Kuliah Pemrograman Web)    
+-JS Rookie Leader (dari Mata Kuliah Pemrograman Web)  
+-JS Rookie 100 (dari Mata Kuliah Pemrograman Web)  
 
 ### Log Harian Update dan Commit Website Tastefood:  
 1. Hari Pertama :        
