@@ -71,26 +71,26 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 **Semua Testing Front End berhasil baik dalam mode online ataupun offline dan tidak ada error di console**    
 9. Hari Kesembilan (18 November 2020):  
 -Update ke dalam Repository   
-10. Hari Kesepuluh:  
+10. Hari Kesepuluh (21 Desember 2020):  
 -Menambahkan Form Login User, agar user dapat melakukan login    
 -Menambahkan Form Register User, agar user dapat melakukan register user     
 -Menambahkan Form Order, agar user dapat melakukan pemesanan makanan ke dalam restoran Tastefood      
-11. Hari Kesebelas:   
+11. Hari Kesebelas (2 Januari 2021):   
 -Melakukan perubahan bentuk Website yang awalnya MPA menjadi SPA agar bisa lebih sesuai dengan keperluan website    
-12. Hari Keduabelas:    
+12. Hari Keduabelas (4 Januari 2021):    
 -Menambahkan User Session dengan fungsi Login dan Logout    
 -Login dengan password sudah menggunakan fungsi Hashing untuk tambahan keamanan     
-13. Hari Ketigabelas:  
+13. Hari Ketigabelas (4 Januari 2021):  
 -Menambahkan fungsi Register User, agar user dapat membuat akunnya sendiri untuk login ke Tastefood      
 -Register dengan password sudah menggunakan fungsi Hashing untuk tambahan keamanan      
-14. Hari Keempatbelas:    
+14. Hari Keempatbelas (4 Januari 2021):    
 -Melakukan minor fix terhadap bug dan testing terhadap user session dan fitur LOGIN, LOGOUT, dan REGISTER    
 **Semua Testing User Session berhasil baik dalam mode online ataupun offline dan tidak ada error di console**    
-15. Hari Kelimabelas:    
+15. Hari Kelimabelas (5 Januari 2021):    
 -Menambahkan fungsi Create Order, agar user bisa menambahkan order   
 -Menambahkan fungsi Read Order, agar table di form Order dapat membaca order apa saja yang sudah masuk    
 -Menambahkan fungsi Delete Order, agar user dapat menghapus order
-16. Hari Keenambelas:  
+16. Hari Keenambelas (6 Januari 2021):  
 -Melakukan minor fix terhadap bug dan testing terhadap CRD yang ada di dalam Website     
 -Melakukan hosting terhadap Website Tastefood di alamat web tastefood.my.id   
 -Melakukan update terhadap diary / laporan progress website    
