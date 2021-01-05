@@ -93,5 +93,5 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 16. Hari Keenambelas:  
 -Melakukan minor fix terhadap bug dan testing terhadap CRD yang ada di dalam Website     
 -Melakukan hosting terhadap Website Tastefood di alamat web tastefood.my.id   
--Melakukan update terhadap diary / laporan progress website
+-Melakukan update terhadap diary / laporan progress website    
 **Semua Testing CRD berhasil baik dalam mode online ataupun offline dan tidak ada error di console**
