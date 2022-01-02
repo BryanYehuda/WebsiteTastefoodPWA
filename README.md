@@ -1,4 +1,4 @@
-# WebsiteTastefood PWA
+# Website Tastefood PWA
 
 ## English
 ### This is a Tastefood Restaurant Website created for the ITS Web Programming course
