@@ -34,6 +34,10 @@ The website that I have created currently has fulfilled:
 - JS Rookie Leader (from Web Programming Course)
 - JS Rookie 100 (from Web Programming Course)
 
+### License
+This Repository has **MIT License.**   
+This license allows the user to make any changes to the program code. This license only requires the user to include the license and author's copyright in the redistributed code and there is no prohibition against using the trademark of the original author. In addition, the user also has no right to sue the manufacturer when there is damage to the software
+
 ## Bahasa
 ### Ini adalah Website Restoran Tastefood yang dibuat untuk mata kuliah Pemrograman Web ITS 
 - Semua Pemrograman dilakukan di Brackets dan Visual Studio Code, code editor khusus Website yang memiliki fitur Live Preview   
@@ -132,6 +136,7 @@ Adapun website yang saya buat saat ini sudah memenuhi:
 - Melakukan update terhadap diary / laporan progress website    
 **Semua Testing CRD berhasil baik dalam mode online ataupun offline dan tidak ada error di console**
 
+### Lisensi
 Repository ini memiliki **Lisensi MIT.**      
 Lisensi ini membolehkan pengguna untuk melakukan perubahan apapun pada kode program. Lisensi ini hanya mewajibkan pengguna untuk menyertakan lisensi dan copyright pembuat pada kode yang didistribusikan ulang dan tidak ada larangan untuk menggunakan trademark dari pembuat asli. Selain itu pengguna juga tidak berhak untuk menuntut pembuat ketika terjadi kerusakan pada perangkat lunak tersebut.
 
