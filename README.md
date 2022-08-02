@@ -7,7 +7,9 @@
 - This website has been validated by W3C CSS Validator     
 ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss) ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss-blue)    
 - This website has been validated by the W3C HTML Validator    
-![HTML Validator Badge](https://www.w3.org/Icons/valid-html401) ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401-blue)
+![HTML Validator Badge](https://www.w3.org/Icons/valid-html401) ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401-blue)   
+
+You can see the website in action at my [Instagram Reel](https://www.instagram.com/reel/Cgw3gCtogdj/)
 
 ### This website was created with the PWA concept using Service Worker, Promise, Materialize Framework, PHP Version 7.3, MySQL, and ES6 standard Javascript: 
 The website that I have created currently has fulfilled:
@@ -46,6 +48,8 @@ This license allows the user to make any changes to the program code. This licen
 ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss) ![CSS Validator Badge](http://jigsaw.w3.org/css-validator/images/vcss-blue)     
 - Website ini sudah divalidasi oleh W3C HTML Validator     
 ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401) ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401-blue) 
+
+Hasil pengerjaan dari website bis dilihat pada [Instagram Reel](https://www.instagram.com/reel/Cgw3gCtogdj/)
 
 ### Website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, Framework Materialize, PHP Versi 7.3, MySQL, dan Javascript standar ES6: 
 Adapun website yang saya buat saat ini sudah memenuhi:  
