@@ -49,7 +49,7 @@ This license allows the user to make any changes to the program code. This licen
 - Website ini sudah divalidasi oleh W3C HTML Validator     
 ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401) ![HTML Validator Badge](https://www.w3.org/Icons/valid-html401-blue) 
 
-Hasil pengerjaan dari website bis dilihat pada [Instagram Reel](https://www.instagram.com/reel/Cgw3gCtogdj/)
+Hasil pengerjaan dari website bisa dilihat pada [Instagram Reel](https://www.instagram.com/reel/Cgw3gCtogdj/)
 
 ### Website ini dibuat dengan konsep PWA menggunakan Service Worker, Promise, Framework Materialize, PHP Versi 7.3, MySQL, dan Javascript standar ES6: 
 Adapun website yang saya buat saat ini sudah memenuhi:  
